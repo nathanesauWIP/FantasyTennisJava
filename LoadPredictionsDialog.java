@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*; // FlowLayout
 
 // not tested
 public class LoadPredictionsDialog extends JDialog {

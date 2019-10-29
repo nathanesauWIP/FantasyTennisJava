@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*; // FlowLayout
 
 // not tested
 public class PreferencesDialog extends JDialog {
@@ -29,6 +30,8 @@ public class PreferencesDialog extends JDialog {
         this.customDirLabel.setText("Predictions Directory");
         this.customDirLE = new JTextField();
         this.customDirLE.setText("Default customI_dir"); // todo: set initial value properly
+        this.okButton = new JButton();
+        this.okButton.setText("OK");
 
         // layout
         this.mainLayout = new FlowLayout();
@@ -45,7 +48,7 @@ public class PreferencesDialog extends JDialog {
 
         // frame
         ImageIcon logo = new ImageIcon("images/icon.png");
-        this.setIconImage(logo.getimage());
+        this.setIconImage(logo.getImage());
         this.setTitle("Preferences");
         this.setSize(400, 500);
     }

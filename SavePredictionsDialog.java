@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 // not tested
 public class SavePredictionsDialog extends JDialog {
@@ -24,6 +25,8 @@ public class SavePredictionsDialog extends JDialog {
         this.mainLayout = new FlowLayout();
         this.setLayout(this.mainLayout);
         this.add(this.fileNameLabel);
+        this.add(this.fileNameLE);
+        this.add(this.okButton);
 
         // event listeners
         this.okButton.addActionListener((event) -> this.onOKButtonPressed());

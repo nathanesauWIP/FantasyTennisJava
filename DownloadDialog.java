@@ -1,6 +1,5 @@
 import javax.swing.*; // JButton, JFrame, JPanel
 import java.awt.*; // FlowLayout
-import java.util.ArrayList;
 
 // tested
 public class DownloadDialog extends JDialog {

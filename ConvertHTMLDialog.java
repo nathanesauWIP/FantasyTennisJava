@@ -1,11 +1,12 @@
 import javax.swing.*;
+import java.awt.*; // FlowLayout
 
 // not tested
 public class ConvertHTMLDialog extends JDialog {
 
     // widgets
     JLabel fileLabel;
-    JLabel fileComboBox;
+    JComboBox fileComboBox;
     JButton okButton;
     FlowLayout mainLayout;
 

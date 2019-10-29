@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*; // FlowLayout
 
 // tested
 public class MainWindow extends JFrame {
@@ -42,7 +43,7 @@ public class MainWindow extends JFrame {
 
         // event handlers
         this.downloadBracketItem.addActionListener((event) -> this.onDownloadBracket());
-        this.convertHTMLToDbItem.addActionListener((event) -> this.onConvertHTMLtoDb());
+        this.convertHTMLToDbItem.addActionListener((event) -> this.onConvertHTMLToDb());
         this.loadBracketItem.addActionListener((event) -> this.onLoadBracket());
         this.preferencesItem.addActionListener((event) -> this.onPreferences());
         this.savePredictionsItem.addActionListener((event) -> this.onSavePredictions());
@@ -105,7 +106,7 @@ public class MainWindow extends JFrame {
 
     // not tested
     void onSavePredictions() {
-        SavePredictionsDialog dialog = new SavePredictionsDialog();
+        SavePredictionsDialog dialog = new SavePredictionsDialog("out.db");
         dialog.setVisible(true);
     }
 
